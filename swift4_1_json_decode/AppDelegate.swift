@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  swift4_1_json_decode
-//
-//  Created by Brian Voong on 4/2/18.
-//  Copyright © 2018 Brian Voong. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain

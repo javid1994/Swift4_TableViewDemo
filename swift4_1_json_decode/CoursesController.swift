@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  swift4_1_json_decode
-//
-//  Created by Brian Voong on 4/2/18.
-//  Copyright © 2018 Brian Voong. All rights reserved.
-//
 
 import UIKit
 
@@ -24,7 +17,6 @@ class CoursesController: UITableViewController {
         let name: String
         let link: String
         
-//        let number_of_lessons: Int
         let numberOfLessons: Int
         let imageUrl: String
         
@@ -49,8 +41,7 @@ class CoursesController: UITableViewController {
                 guard let data = data else { return }
                 
                 do {
-                    // link in description for video on JSONDecoder
-                    let decoder = JSONDecoder()
+                   let decoder = JSONDecoder()
                     // Swift 4.1
                     decoder.keyDecodingStrategy = .convertFromSnakeCase
                     self.courses = try decoder.decode([Course].self, from: data)
